@@ -11,4 +11,6 @@ I am generally a very organized person and prefer to have an Apple Calendar with
 
 The folder structure I created should be good for reproducible research because there is space for saving data in the raw form and then concat it to clean it up and have a final dataset. The scripts can help split up the coding project into multiple steps which saves computational power and also makes it really understanding for other people to read about the code. Moreover, once the final outputs are infered, it will be really easy for other researchers to understand because of this structure. To be very honest, I opened up the Assignment 7 folder in the SUPERCOMPUTING Folder provided by the instructor of the course to see what project structures will potentially look like in the future. I also made sure to take help from the Assignment 1 doc to see how to have a good folder structure. 
 
-# STILL NEED TO FINISH THE LAST TWO BULLET POINTS
+I think having documented code is very helpful in debugging issues in case of research cases or new developments in technology. It is also great for reproducibility or also advancing on the same technology. At the same time, if the original researcher is on leave, a different researcher can still continue to work on the project and use the documented code to get up to speed. If we have documented code, and are having debugging issues, it is really easy to pinpoint specifically to a line of code and amend it. 
+
+I am really excited to learn more in this class and apply these skills to real-world projects. 
