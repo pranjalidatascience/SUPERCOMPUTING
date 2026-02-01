@@ -7,47 +7,47 @@ cd assignments #Getting to the assignments folder
 
 cd assignment_01 #Getting to the assignment_01 folder
 
-touch assignment_1_essay.md README.md #Create 
+touch assignment_1_essay.md README.md #Create the required files 
 
-mkdir data output scripts
+mkdir data output scripts #create placeholder folders
 
-cd data
+cd data #Getting to the data folder
 
-mkdir raw clean
+mkdir raw clean #Making folders for the data directory
 
-cd raw 
+cd raw #Entering into one of the folders
 
-touch example.txt raw_data.csv
+touch example.txt raw_data.csv #Add new files to the raw folder
 
-cd ..
+cd .. #Exiting the raw data folder
 
-cd clean
+cd clean #Entering into the other folder
 
-touch example.txt clean_data.csv
+touch example.txt clean_data.csv #Add new files to the clean folder
 
-cd ..
+cd .. #Exiting the clean data folder
 
-cd ..
+cd .. #Exiting the data folder
 
-cd output
+cd output #Getting into the output folder
 
-touch assignment_01_final.txt assignment_01_results.csv
+touch assignment_01_final.txt assignment_01_results.csv #Adding placeholder files into the output folder
 
-cd ..
+cd .. #Exiting the output folder
 
-cd scripts
+cd scripts #Getting into the scripts folder
 
-touch clean_reads.py download_data.py map_reads.py
+touch clean_reads.py download_data.py map_reads.py #Add placeholder files into the scripts folder
 
-cd ..
+cd .. #Exiting the scripts folder
 
-cd ..
+cd .. #Exiting the assignment_01 folder
 
-git status
+git status #To see what changes need to be staged
 
-git add .
+git add . #Staging the changed with the git repository
 
-git commit -m "Adding placeholder files in assignment_01"
+git commit -m "Adding placeholder files in assignment_01" #Commiting the changes to the git repository
 
-git push
+git push #Final push to execute the changes
 
