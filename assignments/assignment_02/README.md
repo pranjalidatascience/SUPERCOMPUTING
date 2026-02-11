@@ -68,3 +68,27 @@ chmod 644 GCF_000005845.2_ASM584v2_genomic.fna.gz
 ll #Double check to see if everything worked
 
 # Task 4: Verify File Integrity
+
+## On the Local Machine 
+
+### For the GCF_000005845.2_ASM584v2_genomic.fna.gz (FNA)
+
+### c13d459b5caa702ff7e1f26fe44b8ad7
+
+### For the GCF_000005845.2_ASM584v2_genomic.gff.gz (GFF)
+
+### 2238238dd39e11329547d26ab138be41
+
+## On the HPC 
+
+### For the GCF_000005845.2_ASM584v2_genomic.fna.gz (FNA)
+
+### c13d459b5caa702ff7e1f26fe44b8ad7
+
+### For the GCF_000005845.2_ASM584v2_genomic.gff.gz (GFF)
+
+### 2238238dd39e11329547d26ab138be41
+
+## For both the file formats, the unique hash are the same which affirms that the FTP download and FileZilla transfer did not corrupt the data. 
+
+
