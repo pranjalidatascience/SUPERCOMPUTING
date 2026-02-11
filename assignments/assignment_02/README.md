@@ -2,11 +2,7 @@
 
 ssh pgupta03@bora.sciclone.wm.edu #Entering the HPC
 
-cd SUPERCOMPUTING #Getting to the working directory
-
-cd assignments #Getting to the assignments directory
-
-cd assignment_02 #Getting to the assignment 2 folder
+cd SUPERCOMPUTING/assignments/assignment_02 #Getting to the working directory
 
 mkdir data #Making a data directory
 
@@ -47,13 +43,7 @@ get GCF_000005845.2_ASM584v2_genomic.gff.gz
 ## Ensure Files are Readable 
 bora
 
-cd SUPERCOMPUTING 
-
-cd assignments
-
-cd assignment_02 #Getting to the right working directory
-
-cd data #Using the data folder
+cd SUPERCOMPUTING/assignments/assignment_02/data #Getting to the right working directory
 
 ll #Looking at the permissions using a shortcut of ls -alh
 
@@ -91,4 +81,36 @@ ll #Double check to see if everything worked
 
 ## For both the file formats, the unique hash are the same which affirms that the FTP download and FileZilla transfer did not corrupt the data. 
 
+# Task 5: Useful Bash Aliases 
 
+## alias u='cd ..;clear;pwd;ls -alFh --group-directories-first'
+
+### cd .. takes you one step back to the parent directory
+
+### clear removes all the contents on the terminal
+
+### pwd returns the absolute path of the working directory
+
+### ls -alFh --group-directories-first lists all the contents on the directory putting all the group directories first
+
+## alias d='cd -;clear;pwd;ls -alFh --group-directories-first'
+
+### cd - bring you to the previous directory
+
+### clear removes all the contents on the terminal 
+
+### pwd prints the absolute path of the working directory 
+
+### ls -alFh --group-directories-first lists all the contents on the directory putting all the group directories first 
+
+## alias ll='ls -alFh --group-directories-first'
+
+### This lists all the contents on the directory putting all the group directories first
+
+# Reflection 
+
+## What Worked?
+
+## What was Hard?
+
+## What you'd Change?
