@@ -1,3 +1,10 @@
+# Assignment 2
+
+Pranjali Gupta
+
+February 11th, 2026
+
+ 
 # Task 1: Set up Semester Workspace
 
 ssh pgupta03@bora.sciclone.wm.edu #Entering the HPC
@@ -111,6 +118,16 @@ ll #Double check to see if everything worked
 
 ## What Worked?
 
+I believe that File Transfer worked pretty well for me since we had covered how to do it in class.
+
+I believe that Professor Zahn also mentioned chmod in class so it was easier for me to figure out using just google. I did try to use chmod --help but I think it was much easier to just google. 
+
 ## What was Hard?
 
+I think the hardest thing for me to figure out was the ftp setup. I didn't realise that the ftp was not set up on my computer. I tried to use the sftp command and used it in the beginning but obviously that was not working. 
+
+After downloading ftp, I still couldn't do much because it would disconnect everytime I would try to download the files. I had to use both binary and passive modes to be able to download the files. 
+
 ## What you'd Change?
+
+I spent a lot of time figuring out the ftp connection thing and I hope I had asked ChatGPT or something which might have been faster. That is probably the only thing I would change. 
