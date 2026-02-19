@@ -23,27 +23,27 @@ gunzip GCF_000001735.4_TAIR10.1_genomic.fna.gz #Uncompressing the File
 
 genom= GCF_000001735.4_TAIR10.1_genomic.fna #Creating a shortcut to make exploring a little easier 
 
-### How many sequences are in the FASTA file?
+### 1. How many sequences are in the FASTA file?
 
 grep -c ">" $genom 
 
-### What is the total number of nucleotides (not including header lines or newlines)?
+### 2. What is the total number of nucleotides (not including header lines or newlines)?
 
-grep -v "^>" $genom| wc -c
+grep -v "^>" $genom|tr -d  "\n" | wc -c
 
-### How many total lines are in the file? 
+### 3. How many total lines are in the file? 
 
 wc -l $genom
 
-### How many header lines contain the word "mitochondrion"?
+### 4. How many header lines contain the word "mitochondrion"?
 
 grep "^>" $genom | grep -c "mitochondrion"
 
-### How many header lines contain the word "chromosome"?
+### 5. How many header lines contain the word "chromosome"?
 
 grep "^>" $genom | grep -c "chromosome" 
 
-### How many nucleotides are in each of the first 3 chromosome sequences?
+### 6. How many nucleotides are in each of the first 3 chromosome sequences?
 
 grep -v "^>" $genom | head -n 1 | wc -c
 
@@ -51,22 +51,21 @@ grep -v "^>" $genom | head -n 2|tail -n 1 | wc -c
 
 grep -v "^>" $genom | head -n 3|tail -n 1 | wc -c 
 
-### How many nucleotides are in the sequence for 'chromosome 5'?
+### 7. How many nucleotides are in the sequence for 'chromosome 5'?
 
 grep -v "^>" $genom | head -n 5|tail -n 1 | wc -c
 
-### How many sequences contain "AAAAAAAAAAAAAAAA"?
+### 8. How many sequences contain "AAAAAAAAAAAAAAAA"?
 
 grep -v "^>" $genom | grep -c "AAAAAAAAAAAAAAAA"
 
-### If you were to sort the sequences alphabetically, which sequence (header) would be first in that list?
+### 9. If you were to sort the sequences alphabetically, which sequence (header) would be first in that list?
 
 grep "^>" $genom | sort | head -n 1
 
-### How would you make a new tab-separated version of this file, where the first column is the headers and the second column are the associated sequences? (show the command(s))
+### 10. How would you make a new tab-separated version of this file, where the first column is the headers and the second column are the associated sequences? (show the command(s))
 
 paste <(grep “^>” $genom) <(grep -v “^>” $genom) 
-
 
 ## Task 4: Reflection 
 
