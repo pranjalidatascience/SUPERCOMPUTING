@@ -7,11 +7,12 @@ grep -c "^>" $var>n_seq.tmp
 
 grep -v "^>" $var | wc -c>n_nucle.tmp
 
-paste <(grep "^>" $var) <(grep -v "^>" |wc -l)>table.tmp
-cat n_seq.tmp
+seqtk comp $var| awk '{print $1 "\t" $2}'>table.tmp
 
-cat n_nucle.tmp
+echo "Total Number of sequences in ${var}:" |cat - n_seq.tmp
 
-cat table.tmp
+echo "Total Number of Nucleotides in ${var}:"|cat - n_nucle.tmp
+
+echo "Table of Sequences and Lengths in ${var}:"|cat - table.tmp
 
 
