@@ -44,4 +44,12 @@ for file in data/*.fna; do echo "Working on $file"; sleep 3; bash summarize_fast
 
 ## Reflection 
 
+I think the biggest challenge for me was creating the table of sequence of names and lengths in a fasta file. I had to definitely use google but it told me to use awk but I then used ChatGPT and it helped me create a function without any pipelines. It took a little while but I think it was the best way to do it. 
 
+I think I had also messed up by not adding the seqtk at the end of the $PATH and so it wouldn't run in my assignment_04 folder but it worked once I removed the seqtk clone of the git repo and then changed the $PATH directory in the bash file and then ran it again and then it finally worked. I again had to use Google as a resource for this. 
+
+Exploring the seqtk was definitely something I learned new. I was also very curious that the seqtk doesn't have a --help function but I thought it was definitely easier to be able to google than look for documentation in the git repository.
+
+## What $PATH is and how it's used
+
+$PATH from my understanding is, a universal command so that if there is any path inside there, the HPC can access that from anywhere. 
