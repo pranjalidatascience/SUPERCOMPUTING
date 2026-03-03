@@ -9,7 +9,7 @@ MAIN_DIR="/sciclone/home/pgupta03/SUPERCOMPUTING/lessons/lesson_05"
 cd $MAIN_DIR
 
 # whatever commands got you a working for-loop
-for FWD in data/*_R1_*;
+for FWD in $SHARED_DIR/lesson_05/data/*_R1_*;
 do REV=${FWD/_R1_/_R2_};
 OUT=${FWD%_L001_R1_sample.fastq}_interleaved_chop_${1}.fastq;
 echo $FWD $REV $OUT $1;
