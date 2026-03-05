@@ -45,4 +45,20 @@ chmod a+x ./fastp #Adding permissions to the fastp tool
 
 ## Task 4: Script to run fastp
 
+#### I used the parameters to build the 02_run_fastp.sh
 
+## Task 5: pipeline.sh script
+
+#### I ran the 01_download_data.sha and created a for loop to run the data in the raw folder and redirect to trimmed folder
+
+## Task 6: Delete all Data files
+
+#### I deleted all the files and ran the pipeline.sh file to redo it. 
+
+## Reflection 
+
+#### I had accidentally misspelled the 01_download_data.sh and I had written it correctly in the pipeline.sh file and it was saying that it couldn't find the file. I tried a bunch of things with permissions and stuff and it was just a spelling error. 
+
+#### I learned how to extract just a tar file and it was very easy to do a google search and find what options to use when you are handling different files.  
+
+#### 
