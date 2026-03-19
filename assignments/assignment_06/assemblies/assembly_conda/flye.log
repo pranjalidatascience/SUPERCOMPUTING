@@ -1,0 +1,76 @@
+[2026-03-19 08:47:18] root: INFO: Starting Flye 2.9.6-b1802
+[2026-03-19 08:47:18] root: DEBUG: Cmd: /sciclone/home/pgupta03/.conda/envs/flye-env/bin/flye --nano-raw /sciclone/home/pgupta03/SUPERCOMPUTING/assignments/assignment_06/data/SRR33939694.fastq.gz --meta --threads 6 --genome-size 52.9M --out-dir /sciclone/home/pgupta03/SUPERCOMPUTING/assignments/assignment_06/assemblies/assembly_conda
+[2026-03-19 08:47:18] root: DEBUG: Python version: 3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]
+[2026-03-19 08:47:18] root: INFO: >>>STAGE: configure
+[2026-03-19 08:47:18] root: INFO: Configuring run
+[2026-03-19 08:47:19] root: INFO: Total read length: 52927180
+[2026-03-19 08:47:19] root: INFO: Input genome size: 52900000
+[2026-03-19 08:47:19] root: INFO: Estimated coverage: 1
+[2026-03-19 08:47:19] root: WARNING: Expected read coverage is 1, the assembly is not guaranteed to be optimal in this setting. Are you sure that the genome size was entered correctly?
+[2026-03-19 08:47:19] root: INFO: Reads N50/N90: 505 / 254
+[2026-03-19 08:47:19] root: INFO: Minimum overlap set to 1000
+[2026-03-19 08:47:20] root: INFO: >>>STAGE: assembly
+[2026-03-19 08:47:20] root: INFO: Assembling disjointigs
+[2026-03-19 08:47:20] root: DEBUG: -----Begin assembly log------
+[2026-03-19 08:47:20] root: DEBUG: Running: flye-modules assemble --reads /sciclone/home/pgupta03/SUPERCOMPUTING/assignments/assignment_06/data/SRR33939694.fastq.gz --out-asm /sciclone/home/pgupta03/SUPERCOMPUTING/assignments/assignment_06/assemblies/assembly_conda/00-assembly/draft_assembly.fasta --config /sciclone/home/pgupta03/.conda/envs/flye-env/lib/python3.12/site-packages/flye/config/bin_cfg/asm_raw_reads.cfg --log /sciclone/home/pgupta03/SUPERCOMPUTING/assignments/assignment_06/assemblies/assembly_conda/flye.log --threads 6 --meta --genome-size 52900000 --min-ovlp 1000
+[2026-03-19 08:47:20] DEBUG: Build date: May  4 2025 23:17:52
+[2026-03-19 08:47:20] DEBUG: Total RAM: 156 Gb
+[2026-03-19 08:47:20] DEBUG: Available RAM: 151 Gb
+[2026-03-19 08:47:20] DEBUG: Total CPUs: 40
+[2026-03-19 08:47:20] DEBUG: Loading /sciclone/home/pgupta03/.conda/envs/flye-env/lib/python3.12/site-packages/flye/config/bin_cfg/asm_raw_reads.cfg
+[2026-03-19 08:47:20] DEBUG: Loading /sciclone/home/pgupta03/.conda/envs/flye-env/lib/python3.12/site-packages/flye/config/bin_cfg/asm_defaults.cfg
+[2026-03-19 08:47:20] DEBUG: 	big_genome_threshold=29000000
+[2026-03-19 08:47:20] DEBUG: 	meta_read_filter_kmer_freq=100
+[2026-03-19 08:47:20] DEBUG: 	chain_large_gap_penalty=2
+[2026-03-19 08:47:20] DEBUG: 	chain_small_gap_penalty=0.5
+[2026-03-19 08:47:20] DEBUG: 	chain_gap_jump_threshold=100
+[2026-03-19 08:47:20] DEBUG: 	max_jump_gap=500
+[2026-03-19 08:47:20] DEBUG: 	max_coverage_drop_rate=5
+[2026-03-19 08:47:20] DEBUG: 	max_extensions_drop_rate=5
+[2026-03-19 08:47:20] DEBUG: 	chimera_window=100
+[2026-03-19 08:47:20] DEBUG: 	chimera_overhang=1000
+[2026-03-19 08:47:20] DEBUG: 	min_reads_in_disjointig=4
+[2026-03-19 08:47:20] DEBUG: 	max_inner_reads=10
+[2026-03-19 08:47:20] DEBUG: 	max_inner_fraction=0.25
+[2026-03-19 08:47:20] DEBUG: 	aggressive_dup_filter=1
+[2026-03-19 08:47:20] DEBUG: 	max_separation=500
+[2026-03-19 08:47:20] DEBUG: 	unique_edge_length=50000
+[2026-03-19 08:47:20] DEBUG: 	min_repeat_res_support=0.51
+[2026-03-19 08:47:20] DEBUG: 	out_paths_ratio=5
+[2026-03-19 08:47:20] DEBUG: 	graph_cov_drop_rate=5
+[2026-03-19 08:47:20] DEBUG: 	coverage_estimate_window=100
+[2026-03-19 08:47:20] DEBUG: 	max_bubble_length=50000
+[2026-03-19 08:47:20] DEBUG: 	loop_coverage_rate=1.5
+[2026-03-19 08:47:20] DEBUG: 	repeat_edge_cov_mult=1.75
+[2026-03-19 08:47:20] DEBUG: 	weak_detach_rate=5
+[2026-03-19 08:47:20] DEBUG: 	tip_coverage_rate=2
+[2026-03-19 08:47:20] DEBUG: 	tip_length_rate=2
+[2026-03-19 08:47:20] DEBUG: 	output_gfa_before_rr=1
+[2026-03-19 08:47:20] DEBUG: 	remove_alt_edges=0
+[2026-03-19 08:47:20] DEBUG: 	low_cutoff_warning=1
+[2026-03-19 08:47:20] DEBUG: 	kmer_size=17
+[2026-03-19 08:47:20] DEBUG: 	use_minimizers=0
+[2026-03-19 08:47:20] DEBUG: 	reads_base_alignment=0
+[2026-03-19 08:47:20] DEBUG: 	meta_read_top_kmer_rate=0.40
+[2026-03-19 08:47:20] DEBUG: 	maximum_jump=1500
+[2026-03-19 08:47:20] DEBUG: 	maximum_overhang=1500
+[2026-03-19 08:47:20] DEBUG: 	repeat_kmer_rate=100
+[2026-03-19 08:47:20] DEBUG: 	assemble_ovlp_divergence=0.10
+[2026-03-19 08:47:20] DEBUG: 	assemble_divergence_relative=1
+[2026-03-19 08:47:20] DEBUG: 	repeat_graph_ovlp_divergence=0.08
+[2026-03-19 08:47:20] DEBUG: 	read_align_ovlp_divergence=0.25
+[2026-03-19 08:47:20] DEBUG: 	hpc_scoring_on=0
+[2026-03-19 08:47:20] DEBUG: 	add_unassembled_reads=0
+[2026-03-19 08:47:20] DEBUG: 	extend_contigs_with_repeats=0
+[2026-03-19 08:47:20] DEBUG: 	min_read_cov_cutoff=3
+[2026-03-19 08:47:20] DEBUG: 	short_tip_length=20000
+[2026-03-19 08:47:20] DEBUG: 	long_tip_length=100000
+[2026-03-19 08:47:20] DEBUG: Running with k-mer size: 17
+[2026-03-19 08:47:20] DEBUG: Running with minimum overlap 1000
+[2026-03-19 08:47:20] DEBUG: Metagenome mode: Y
+[2026-03-19 08:47:20] DEBUG: Short mode: N
+[2026-03-19 08:47:20] INFO: Reading sequences
+[2026-03-19 08:47:21] DEBUG: Building positional index
+[2026-03-19 08:47:21] DEBUG: Total sequence: 8057872 bp
+[2026-03-19 08:47:23] INFO: Counting k-mers:
+[2026-03-19 08:47:23] DEBUG: Updating k-mer histogram
