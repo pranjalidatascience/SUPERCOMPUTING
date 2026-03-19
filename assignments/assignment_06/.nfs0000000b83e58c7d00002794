@@ -8,6 +8,7 @@ ASS_DIR=${BASE_DIR}/assemblies
 bash $SCR_DIR/01_download_data.sh
 bash $SCR_DIR/02_flye_2.9.5_conda_install.sh
 bash $SCR_DIR/02_flye_2.9.5_manual_build.sh
+cd $BASE_DIR
 bash $SCR_DIR/03_run_flye_conda.sh
 bash $SCR_DIR/03_run_flye_module.sh
 bash $SCR_DIR/03_run_flye_local.sh

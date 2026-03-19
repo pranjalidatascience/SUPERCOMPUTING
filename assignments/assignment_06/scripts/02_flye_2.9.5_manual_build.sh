@@ -11,3 +11,4 @@ cd Flye
 make
 
 echo 'export PATH="$PATH:~/programs/Flye/bin"' >> ~/.bashrc
+
