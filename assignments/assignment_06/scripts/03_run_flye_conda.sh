@@ -13,4 +13,16 @@ conda activate flye-env
 
 flye --nano-raw data/SRR33939694.fastq --meta --threads 6 --genome-size 52.9M --out-dir $ASS_DIR/assembly_conda
 
+cd $ASS_DIR/assembly_conda
+
+mv assembly.fasta conda_assembly.fasta
+
+mv flye.log conda_flye.log
+
+rm -r *0-*
+
+rm assembly_*
+
+rm *.json
+
 conda deactivate
