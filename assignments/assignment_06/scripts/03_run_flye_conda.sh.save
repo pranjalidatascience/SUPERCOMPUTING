@@ -1,0 +1,17 @@
+#!/bin/bash
+
+BASE_DIR=~/SUPERCOMPUTING/assignments/assignment_06/
+DATA_DIR=${BASE_DIR}/data
+DATA=${DATA_DIR}/SRR22929694.fastq.gz
+ASSEMB
+
+set -ueo pipefail
+
+module load miniforge3
+source "$(conda info --base)/etc/profile.d/
+conda activate flye-env
+
+flye --nano-raw DATA --genome-size 49.5Mb --threads 6 --meta --out-dir  
+
+
+conda deactivate
