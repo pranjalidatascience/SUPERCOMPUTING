@@ -1,0 +1,10 @@
+ERR16898322
+spots read      : 28,378,640
+reads read      : 56,757,280
+reads written   : 56,757,280
+ERR16898310
+spots read      : 28,838,340
+reads read      : 57,676,680
+reads written   : 57,676,680
+ERR16898318
+slurmstepd: error: *** JOB 286959 ON hi02 CANCELLED AT 2026-03-26T02:44:52 DUE TO TIME LIMIT ***

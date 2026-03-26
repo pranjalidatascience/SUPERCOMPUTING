@@ -14,7 +14,7 @@ SCR_DIR=/sciclone/home/pgupta03/scr10
 for i in $(cut -d "," -f1 SraRunTable.csv | tail -n +2); do
 echo $i;
 fasterq-dump $i -O $SCR_DIR;
-head -n 10 $i>${RAW_DIR}/${i};
+head -n 10 $i>${i/.fastq/_trimmed.fastq};
 done
 rm -r fasterq.tmp.bora.sciclone.wm.edu.1*
 

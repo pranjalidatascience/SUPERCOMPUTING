@@ -21,7 +21,9 @@ bbmap.sh ref=$DOG_DATA in1=$FWD in2=${FWD/_1/_2} out=$OUT minid=0.95
 # -b: output BAM format
 # -h: include the header (essential for downstream steps)
 # -F 4: filter out (exclude) unmapped reads
-samtools view -b -h -F 4 .sam > "${OUT_DIR}/${TMP/_1.fastq/_reads.bam}"
+samtools view -b -h -F 4 ${OUT}.sam>${TMP/_1.fastq/_reads.bam}
 done
- 
 
+mv *.sam ${OUT_DIR}
+#Clean up
+conda deactivate
